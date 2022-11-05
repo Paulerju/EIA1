@@ -1,0 +1,198 @@
+
+.right {
+    float: right;
+    right: 0px;
+    padding: 10px;
+    width: 300px;
+  }
+  .rightI {
+    float: right;
+    right: 0px;
+    padding: 10px;
+    
+  }
+
+.test {
+  width: 200%;
+}
+
+  .center {
+    text-align: center;
+  }
+
+  .centerI {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+
+    .left {
+    
+    float: left;
+    width: 300px;
+    padding: 10px;
+  }
+
+  .leftI {
+    
+    float: left;
+    width: 1000px;
+    height: 300p;
+    padding: 10px;
+
+  }
+
+  body {
+    background-color:rgb(37, 34, 34);
+    max-width: 800px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column; 
+       
+  }
+
+  p {
+    color: aliceblue;
+  }
+
+  h1{
+    color: aliceblue;
+  }
+  
+  
+ 
+  ul {
+    list-style-type: none;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #333
+    
+       
+   }
+  
+  li {
+    float: right;
+    
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: underline;
+    
+    
+  }
+
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    padding-right: 400px;
+    
+  
+}
+  
+  li a:hover {
+    color: black;
+  }
+
+  .banner {
+    width: 100%;
+    height: 100px;
+  }
+
+  .icon {
+    margin: 80px 80px;
+    width: 100px;
+   
+  }
+ 
+h2 {
+  color: aliceblue;
+ 
+}
+
+
+video {
+ 
+  width: 70%    !important;
+  height: auto   !important;
+  display: block;
+  margin: 0 auto;
+  
+}
+.current{
+  background-color: rgb(81, 84, 84);
+}
+.container{
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+footer {
+ 
+  position:relative ;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100px;
+  background: rgb(73, 72, 72);
+  height: auto;
+  width: 100%;
+  color: #fff;
+ }
+
+ .footer-content{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  padding-right: 100px;
+  padding-left: 100px;
+ 
+  }
+
+.bg-img{
+  background-image: url(..\Images\grafik4.jpg);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#page-container {
+  position: relative;}
+
+.size {
+  width: 500px;
+  height: 5px;
+  padding: 20px;
+  color: #fff;
+}
+.sizeI {
+  width: 500px;
+  height: 100px;
+  padding: 20px;
+  color: #fff;
+}
+
+button{
+  width: 300px;
+  height: 50px;
+  background-color : #4b4a4a;
+   
+}
+
+  
+input[type="text"], textarea {
+
+  background-color : #4b4a4a; 
+
+}
