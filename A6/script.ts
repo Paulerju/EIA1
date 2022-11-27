@@ -1,4 +1,4 @@
-let De2022 = 84000000;
+/*let De2022 = 84000000;
 let De2008 = 82100000; 
 let Eu2022 = 447700000; 
 
@@ -47,4 +47,4 @@ console.log ("Relativ zur Gesamtzahl der Einwohner in der EU ist die Einwohnerza
 console.log ("Die Einwohner zahl in Spanien beträgt in 2022 " +Sp2022+ ".");
 console.log ("Für Spanien hat sich die Einwohnerzahl im Jahr 2022 im Vergleich zu 2008 um " +resultSp+ "% verändert.")
 console.log ("Relativ zur Gesamtzahl der Einwohner in der EU ist die Einwohnerzahl in Spanien im Jahr 2022:"+resultEU3+"%" )
-
+*/
