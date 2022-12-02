@@ -1,0 +1,53 @@
+button {
+    width: 150px;
+    height: 150px;
+    margin: 2.5px;
+}
+
+body{
+    background-color: black;
+
+}
+
+#one{
+    margin-top: 10%;
+    margin-left: 36%;
+}
+#two{
+    margin-left: 36%;
+}
+#three {
+    margin-left: 36%;
+}
+
+.button1 {
+    background-color: rgb(47, 120, 176);
+}
+.button2 {
+    background-color: rgb(47, 120, 176);
+}
+.button3 {
+    background-color: rgb(47, 120, 176);
+}
+.button4 {
+    background-color: rgb(255, 0, 162);
+}
+.button5 {
+    background-color: rgb(255, 0, 162);
+}
+.button6 {
+    background-color: rgb(255, 0, 162);
+}
+.button7 {
+    background-color: rgb(255, 0, 162);
+}
+.button8 {
+    background-color: rgb(236, 150, 51);
+}
+.button9 {
+    background-color: rgb(236, 150, 51);
+}
+
+.play{
+    margin-left: 47%;
+}
