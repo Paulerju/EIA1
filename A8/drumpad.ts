@@ -1,3 +1,4 @@
+/*
 const A:HTMLAudioElement = new Audio('DrumPad/A.mp3');
 const B:HTMLAudioElement = new Audio('DrumPad/C.mp3');
 const C:HTMLAudioElement = new Audio('DrumPad/F.mp3');
@@ -55,4 +56,4 @@ document.querySelector('.play').addEventListener('click', function() {
 
 
  
- 
+ */

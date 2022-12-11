@@ -1,0 +1,68 @@
+button {
+    width: 150px;
+    height: 150px;
+    margin: 2.5px;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+
+}
+
+#one{
+    margin-top: 10%;
+    margin-left: 36%;
+}
+#two{
+    margin-left: 36%;
+}
+#three {
+    margin-left: 36%;
+}
+
+.button1 {
+    background-color: rgb(47, 120, 176);
+}
+.button2 {
+    background-color: rgb(47, 120, 176);
+}
+.button3 {
+    background-color: rgb(47, 120, 176);
+}
+.button4 {
+    background-color: rgb(255, 0, 162);
+}
+.button5 {
+    background-color: rgb(255, 0, 162);
+}
+.button6 {
+    background-color: rgb(255, 0, 162);
+}
+.button7 {
+    background-color: rgb(255, 0, 162);
+}
+.button8 {
+    background-color: rgb(236, 150, 51);
+}
+.button9 {
+    background-color: rgb(236, 150, 51);
+}
+
+/*Play button*/
+#play{
+      
+    visibility: visible;
+    margin-left: 38%;
+    color: aliceblue;
+}
+
+#pause{
+    visibility: hidden;
+    margin-left: 3%;
+    color: aliceblue;
+}
+
+#mix{
+    margin: 3%;
+    color: aliceblue;
+}

@@ -1,4 +1,3 @@
-/*
 const A:HTMLAudioElement = new Audio('DrumPad/A.mp3');
 const B:HTMLAudioElement = new Audio('DrumPad/C.mp3');
 const C:HTMLAudioElement = new Audio('DrumPad/F.mp3');
@@ -8,7 +7,9 @@ const F:HTMLAudioElement = new Audio('DrumPad/kick.mp3');
 const G:HTMLAudioElement = new Audio('DrumPad/laugh-1.mp3');
 const H:HTMLAudioElement = new Audio('DrumPad/laugh-2.mp3');
 const I:HTMLAudioElement = new Audio('DrumPad/snare.mp3');
-let Beat:any= [F, I, E];
+let myVariable; 
+let Beat:any= [F, I, E, A, B, C, D, G, H]; 
+
 
 
 document.querySelector(".button1").addEventListener('click', function() {
@@ -45,16 +46,62 @@ function playSample(var1) {
 var1.play();
 
 }
-let i=0;
-document.querySelector('.play').addEventListener('click', function() {
-    setInterval(function( ) {
-               Beat[i].play();
-               i++;
+
+let i = 0; 
+
+document.querySelector('#play').addEventListener('click', function() {
+    i=0;
+   myVariable = setInterval(function( ) {
+
+        playSample(Beat[i]); 
+                
+        if(i=>setInterval.length){
+            i = 0; 
+        }
+        else{
+             i++; 
+        }
+        
+        document.querySelector("#play").setAttribute("style", "visibility : hidden" )
+        document.querySelector("#pause").setAttribute("style", "visibility : visible" )
+       
     }, 500);
-    
+  
 });
+
+document.querySelector("#pause").addEventListener("click", function() {
+
+    document.querySelector("#play").setAttribute("style", "visibility : visible" )
+        document.querySelector("#pause").setAttribute("style", "visibility : hidden" )
+
+       
+        clearInterval(myVariable); 
+       
+}); 
+
+document.querySelector("#mix").addEventListener("click", function() {
+       
+    setInterval(function(){
+    let a = Math.floor(Math.random()*9); 
+    
+   playSample(Beat[a]);
+
+   if(i=>setInterval.length){
+    i = 0; 
+    }
+    else{
+        i++; 
+    }
+
+    },500);
+          
+
+        document.querySelector("#play").setAttribute("style", "visibility : hidden" )
+        document.querySelector("#pause").setAttribute("style", "visibility : visible" )
+
+    
+    }); 
 
 
  
- */ 
-//# sourceMappingURL=drumpad.js.map
+ 

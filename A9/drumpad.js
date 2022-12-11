@@ -1,0 +1,76 @@
+const A = new Audio('DrumPad/A.mp3');
+const B = new Audio('DrumPad/C.mp3');
+const C = new Audio('DrumPad/F.mp3');
+const D = new Audio('DrumPad/G.mp3');
+const E = new Audio('DrumPad/hihat.mp3');
+const F = new Audio('DrumPad/kick.mp3');
+const G = new Audio('DrumPad/laugh-1.mp3');
+const H = new Audio('DrumPad/laugh-2.mp3');
+const I = new Audio('DrumPad/snare.mp3');
+let myVariable;
+let Beat = [F, I, E, A, B, C, D, G, H];
+document.querySelector(".button1").addEventListener('click', function () {
+    playSample(A);
+});
+document.querySelector(".button2").addEventListener('click', function () {
+    playSample(B);
+});
+document.querySelector(".button3").addEventListener('click', function () {
+    playSample(C);
+});
+document.querySelector(".button4").addEventListener('click', function () {
+    playSample(D);
+});
+document.querySelector(".button5").addEventListener('click', function () {
+    playSample(E);
+});
+document.querySelector(".button6").addEventListener('click', function () {
+    playSample(F);
+});
+document.querySelector(".button7").addEventListener('click', function () {
+    playSample(G);
+});
+document.querySelector(".button8").addEventListener('click', function () {
+    playSample(H);
+});
+document.querySelector(".button9").addEventListener('click', function () {
+    playSample(I);
+});
+function playSample(var1) {
+    var1.play();
+}
+let i = 0;
+document.querySelector('#play').addEventListener('click', function () {
+    i = 0;
+    myVariable = setInterval(function () {
+        playSample(Beat[i]);
+        if (i => setInterval.length) {
+            i = 0;
+        }
+        else {
+            i++;
+        }
+        document.querySelector("#play").setAttribute("style", "visibility : hidden");
+        document.querySelector("#pause").setAttribute("style", "visibility : visible");
+    }, 500);
+});
+document.querySelector("#pause").addEventListener("click", function () {
+    document.querySelector("#play").setAttribute("style", "visibility : visible");
+    document.querySelector("#pause").setAttribute("style", "visibility : hidden");
+    clearInterval(myVariable);
+});
+document.querySelector("#mix").addEventListener("click", function () {
+    setInterval(function () {
+        let a = Math.floor(Math.random() * 9);
+        playSample(Beat[a]);
+        if (i => setInterval.length) {
+            i = 0;
+        }
+        else {
+            i++;
+        }
+    }, 500);
+    document.querySelector("#play").setAttribute("style", "visibility : hidden");
+    document.querySelector("#pause").setAttribute("style", "visibility : visible");
+});
+//# sourceMappingURL=drumpad.js.map
