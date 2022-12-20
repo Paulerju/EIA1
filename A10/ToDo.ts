@@ -1,4 +1,3 @@
-let Inputvalue :string= (<HTMLInputElement>document.getElementById("Input")).value; 
 const tasks: NewTask[] = []; 
 let del = (<HTMLInputElement>document.getElementById("bin")); 
 
@@ -7,11 +6,6 @@ interface NewTask{
     text: string; 
    
 }
-
-let task: NewTask = {
-    text: Inputvalue,
-    };
-
 
 document.querySelector('#new').addEventListener('click', function() {
 
@@ -36,25 +30,9 @@ check.setAttribute("type", "checkbox");
 check.setAttribute("id", "box"); 
 div.appendChild(check); 
 
-
-
 let Trashbin = document.createElement("i");
 Trashbin.setAttribute("class","fas fa-trash");
 div.appendChild(Trashbin);
 
 });
-
-/* Delete??*/
-
-document.querySelector('#bin').addEventListener('click', function() {
-let d = document.getElementById("div1");
-let d_nested = document.getElementById("nested");
-let throwawayNode = d.removeChild(d_nested);
-
-}); 
-
-
-
-
-
 
