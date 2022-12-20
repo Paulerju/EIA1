@@ -1,28 +1,32 @@
-#bin{
+#trash{
     width: 20px; 
     float: right; 
     margin-right: 10px; 
-    margin-top: 10px;
-   
-}
-#box{
-    margin-bottom: 10px;
-  float: left;
-  margin-top: 10px;
-      
+    margin-top: 15px;
+  
 }
 
+#box{
+   
+  float: left;
+  margin-top: 17px;
+} 
+
 #text{
-    text-align: left;
+ 
     margin-left: 30px;
     padding: 0%; 
     display: inline-flex;
     text-align: center;
+  
 }
 div{
   margin-top: 2px;
       width: 400px;
-    border: 3px solid rgb(162, 161, 161);
+    border: 2px solid rgb(162, 161, 161);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
        
 }
 body{
@@ -48,4 +52,10 @@ h2{
     float: right;
     margin-right: 76%;
     background-color: aliceblue;
-}
+} 
+input[type=text]{
+    border-radius:10px;
+  }
+  button{
+    border-radius: 10px;
+  }

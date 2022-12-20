@@ -23,9 +23,10 @@ document.querySelector('#new').addEventListener('click', function () {
     check.setAttribute("type", "checkbox");
     check.setAttribute("id", "box");
     div.appendChild(check);
-    let Trashbin = document.createElement("img");
-    Trashbin.setAttribute("src", "../Images\Mülltonne.png");
-    Trashbin.setAttribute("id", "bin");
+
+    let Trashbin = document.createElement("i");
+    Trashbin.setAttribute("class", "fas fa-trash");
+    Trashbin.setAttribute("id","trash");
     div.appendChild(Trashbin);
 });
 /* Delete??*/
