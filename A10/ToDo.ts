@@ -19,7 +19,7 @@ document.querySelector('#new').addEventListener('click', function () {
     };
 
     let text = document.createElement("p");
-    text.setAttribute("id", "text");
+    text.setAttribute("id", "text"); 
 
     if (Inputvalue.value.length !== 0) {
         console.log(Inputvalue);
@@ -39,6 +39,7 @@ document.querySelector('#new').addEventListener('click', function () {
 
     let Trashbin = document.createElement("i");
     Trashbin.setAttribute("class", "fas fa-trash");
+    Trashbin.setAttribute("id","trash");
     Trashbin.addEventListener("click", function () {
         this.parentNode.parentNode.removeChild(this.parentNode);
         tasks.pop();

@@ -27,6 +27,7 @@ document.querySelector('#new').addEventListener('click', function () {
     div.appendChild(check);
     let Trashbin = document.createElement("i");
     Trashbin.setAttribute("class", "fas fa-trash");
+    Trashbin.setAttribute("id", "trash");
     Trashbin.addEventListener("click", function () {
         this.parentNode.parentNode.removeChild(this.parentNode);
         tasks.pop();
