@@ -9,10 +9,7 @@ interface NewTask {
 
 document.querySelector('#new').addEventListener('click', function () {
     let Inputvalue = (<HTMLInputElement>document.getElementById("Input"));
-
-    let div = document.createElement("div");
-    div.setAttribute("id", "div1");
-    document.body.appendChild(div);
+    
 
     let task: NewTask = {
         text: Inputvalue.value,
