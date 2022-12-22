@@ -1,4 +1,4 @@
-/*let tasks: NewTask[] = [];
+let tasks: NewTask[] = [];
 let del = (<HTMLInputElement>document.getElementById("bin"));
 let lenght = tasks.length;
 
@@ -9,11 +9,14 @@ interface NewTask {
 
 document.querySelector('#new').addEventListener('click', function () {
     let Inputvalue = (<HTMLInputElement>document.getElementById("Input"));
-    //div wird erstellt - das muss verschoben werden
+    //div wird erstellt
     let newdiv = document.createElement("div");
     newdiv.setAttribute("id", "div1");
-    document.body.appendChild(newdiv);
-   // tasks.insertBefore(newdiv, tasks[0])
+    //div kommt an den Anfang
+    document.getElementById("wrapper").appendChild(newdiv);
+    var sp2 = document.getElementById("wrapper");
+    var parentDiv = sp2.firstChild;
+    sp2.insertBefore(newdiv,parentDiv)
     
 
     let task: NewTask = {
@@ -21,7 +24,7 @@ document.querySelector('#new').addEventListener('click', function () {
     };
     //Text wird eingefügt
     let text = document.createElement("p");
-    text.setAttribute("id", "text");
+    text.setAttribute("id", "text"); 
     //Counter
     if (Inputvalue.value.length !== 0) {
         console.log(Inputvalue);
@@ -30,7 +33,7 @@ document.querySelector('#new').addEventListener('click', function () {
         tasks.unshift(task); console.log(tasks)
         lenght = tasks.length;
         document.querySelector("h2").textContent = "There are " + lenght + " Tasks in total.";
-    }
+    } 
 
     newdiv.appendChild(text);
 
@@ -50,5 +53,5 @@ document.querySelector('#new').addEventListener('click', function () {
     })
     newdiv.appendChild(Trashbin);
     console.log(tasks.length);
-}); */
-//# sourceMappingURL=ToDo.js.map
+});
+

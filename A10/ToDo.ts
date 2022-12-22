@@ -1,38 +1,43 @@
-let tasks: NewTask[] = [];
+/*let tasks: NewTask[] = [];
 let del = (<HTMLInputElement>document.getElementById("bin"));
 let lenght = tasks.length;
 
 interface NewTask {
     text: string;
-
+    
 }
 
 document.querySelector('#new').addEventListener('click', function () {
     let Inputvalue = (<HTMLInputElement>document.getElementById("Input"));
+    //div wird erstellt - das muss verschoben werden
+    let newdiv = document.createElement("div");
+    newdiv.setAttribute("id", "div1");
+    document.body.appendChild(newdiv);
+   // tasks.insertBefore(newdiv, tasks[0])
     
 
     let task: NewTask = {
         text: Inputvalue.value,
     };
-
+    //Text wird eingefügt
     let text = document.createElement("p");
     text.setAttribute("id", "text"); 
-
+    //Counter
     if (Inputvalue.value.length !== 0) {
         console.log(Inputvalue);
         Inputvalue = (<HTMLInputElement>document.getElementById("Input"));
         text.innerHTML = Inputvalue.value;
-        tasks.push(task); console.log(tasks)
+        tasks.unshift(task); console.log(tasks)
         lenght = tasks.length;
         document.querySelector("h2").textContent = "There are " + lenght + " Tasks in total.";
-    }
+    } 
 
-    div.appendChild(text);
+    newdiv.appendChild(text);
 
     let check = document.createElement("input");
     check.setAttribute("type", "checkbox");
     check.setAttribute("id", "box");
-    div.appendChild(check);
+    newdiv.appendChild(check);
 
     let Trashbin = document.createElement("i");
     Trashbin.setAttribute("class", "fas fa-trash");
@@ -43,7 +48,7 @@ document.querySelector('#new').addEventListener('click', function () {
         lenght = tasks.length;
         document.querySelector("h2").textContent = "There are " + lenght + " Tasks in total.";
     })
-    div.appendChild(Trashbin);
+    newdiv.appendChild(Trashbin);
     console.log(tasks.length);
-});
+}); */
 
