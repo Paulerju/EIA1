@@ -1,10 +1,12 @@
-/*let tasks: NewTask[] = [];
+let tasks: NewTask[] = [];
 let del = (<HTMLInputElement>document.getElementById("bin"));
 let lenght = tasks.length;
+let Countchecked = 0; 
+let Countunchecked = 0; 
 
 interface NewTask {
     text: string;
-    
+    checked: boolean; 
 }
 
 document.querySelector('#new').addEventListener('click', function () {
@@ -12,6 +14,7 @@ document.querySelector('#new').addEventListener('click', function () {
     //div wird erstellt
     let newdiv = document.createElement("div");
     newdiv.setAttribute("id", "div1");
+    Countunchecked++;
     //div kommt an den Anfang
     document.getElementById("wrapper").appendChild(newdiv);
     var sp2 = document.getElementById("wrapper");
@@ -21,6 +24,8 @@ document.querySelector('#new').addEventListener('click', function () {
 
     let task: NewTask = {
         text: Inputvalue.value,
+        checked: false, 
+
     };
     //Text wird eingefügt
     let text = document.createElement("p");
@@ -32,7 +37,7 @@ document.querySelector('#new').addEventListener('click', function () {
         text.innerHTML = Inputvalue.value;
         tasks.unshift(task); console.log(tasks)
         lenght = tasks.length;
-        document.querySelector("h2").textContent = "There are " + lenght + " Tasks in total.";
+        document.querySelector("h2").textContent = "There are " + lenght + " Tasks in total. " + Countchecked + " are done. " + Countunchecked + " are still open.";
     } 
 
     newdiv.appendChild(text);
@@ -41,6 +46,19 @@ document.querySelector('#new').addEventListener('click', function () {
     check.setAttribute("type", "checkbox");
     check.setAttribute("id", "box");
     newdiv.appendChild(check);
+    check.addEventListener("click",function(){
+
+        if(this.checked == false){
+             Countunchecked ++; 
+            Countchecked --; 
+        }
+        else{
+            Countchecked ++; 
+            Countunchecked --;
+        }
+
+        document.querySelector("h2").textContent = "There are " + lenght + " Tasks in total. " + Countchecked + " are done. " + Countunchecked + " are still open.";
+    });
 
     let Trashbin = document.createElement("i");
     Trashbin.setAttribute("class", "fas fa-trash");
@@ -49,10 +67,13 @@ document.querySelector('#new').addEventListener('click', function () {
         this.parentNode.parentNode.removeChild(this.parentNode);
         tasks.pop();
         lenght = tasks.length;
-        document.querySelector("h2").textContent = "There are " + lenght + " Tasks in total.";
+        
+        document.querySelector("h2").textContent = "There are " + lenght + " Tasks in total. "+Countchecked+" are done. "+Countunchecked+" are still open.";
+       // -1 of checked / unchecked that was deleted 
     })
     newdiv.appendChild(Trashbin);
     console.log(tasks.length);
+
+
 });
 
-*/
