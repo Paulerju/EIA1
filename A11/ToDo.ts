@@ -1,4 +1,4 @@
-/*let tasks: NewTask[] = [];
+let tasks: NewTask[] = [];
 let del = (<HTMLInputElement>document.getElementById("bin"));
 let lenght = tasks.length;
 
@@ -55,4 +55,3 @@ document.querySelector('#new').addEventListener('click', function () {
     console.log(tasks.length);
 });
 
-*/
